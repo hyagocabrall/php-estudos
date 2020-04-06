@@ -7,7 +7,7 @@
 # Problemas que resolve: 
 
 # Instalação
-[Instalação](https://github.com/hyagocabrall/php-estudos/INSTALACAO.md)
+[Instalação](https://github.com/hyagocabrall/php-estudos/blob/master/INSTALACAO.md)
 
 # Sintaxe 
 
