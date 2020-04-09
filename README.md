@@ -47,13 +47,13 @@ echo $b;    // resultado = 10
 ```
 Existem vários tipos de variáveis que se adequam melhor em determinadas situações, exemplo:     
 1- [Booleano](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/booleano_variavel.md)
-2- [Numérico]()
-3- [String]()
-4- [Array]()
-5- [Objeto]()
+2- [Numérico](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/numerico_vaiavel.md)
+3- [String](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/string_variavel.md)
+4- [Array](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/array_variavel.md)
+5- [Objeto](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/objeto_variavel.md)
 6- [Recuso]()
-7- [Misto]()
-9- [Callback]()
+7- [Misto](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/misto_variaveis.md)
+9- [Callback](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/callback_variaveis.md)
 10- [NULL]()
 
 ## Tipos de dados
