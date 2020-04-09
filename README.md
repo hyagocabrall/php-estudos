@@ -70,10 +70,10 @@ echo MAXIMO_CLIENTES;
 ## Operadores
 
 Os tipos de operadores são:
-1- [Atribuição]()
-2- [Aritméticos]()
-3- [Relacionais]()
-4- [Lógicos]()
+1- [Atribuição](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_atribuicao.md)
+2- [Aritméticos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_aritmeticos.md)
+3- [Relacionais](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_relacionais.md)
+4- [Lógicos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_logicos.md)
 
 
 ## Condicionais
