@@ -1,0 +1,3 @@
+# Zeev Suruski
+
+**Zeev Suraski** é um programador israelense, um dos principais responsáveis pelo desenvolvimento do **PHP** e co-fundador da Zend Technologies. Um alino do Technion (Technion, Instituto de Tecnologia de Israel‎ ou Instituto Israelita de Tecnologia é uma universidade israelense sediada em Haifa com foco na engenharia e em ciências exatas. Fundada em 1924, é a universidade mais antiga de Israel.), Suraski e seu colega [Andi Gutmans]() criaram o **PHP 3** em 1997. Em 1999 eles escreveram o Zend Engine, o motor do **PHP 4**, e fundaram a Zend Technologies, que desde então é a coorderadora do desenvolvimento no **PHP**.
