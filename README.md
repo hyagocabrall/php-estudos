@@ -58,6 +58,15 @@ Existem vários tipos de variáveis que se adequam melhor em determinadas situa�
 
 ## Contantes
 
+A constante é um identificador que ao contrário das variáveis seu valor não é mutável, ele é criado com um valor fixo que é mantido durante a execução do programa. Para que isto ocorra existem algumas delimitações, as constantes so podem conter valores escalares (boolean, inteiro, ponto flutuante e string). Para declaração de constrantes não se utilzia inicialmente o cifrão "$" mas sim a função define (). Normlamente estas são escritas todas em maíusculo.
+
+```
+<?php
+define ("MAXIMO_CLIENTES", 100);
+echo MAXIMO_CLIENTES;
+?>
+```
+
 ## Tipos de dados
 
 ## Condicionais
