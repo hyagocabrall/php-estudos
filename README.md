@@ -56,6 +56,8 @@ Existem vários tipos de variáveis que se adequam melhor em determinadas situa�
 9- [Callback](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/callback_variaveis.md)
 10- [NULL](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/null_variaveis.md)
 
+## Contantes
+
 ## Tipos de dados
 
 ## Condicionais
@@ -69,7 +71,5 @@ Existem vários tipos de variáveis que se adequam melhor em determinadas situa�
 ## Objetos
 
 ## Classes
-
-## Contantes
 
 ## Orientação a objeto
