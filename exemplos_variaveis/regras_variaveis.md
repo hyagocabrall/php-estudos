@@ -1,4 +1,4 @@
-# Regras das varáveis
+## Regras das Varáveis
 
 1- Sempre se inicia a variável com " $ "
 2- Nunca inicie a nomenclatura de variáveis com números.    

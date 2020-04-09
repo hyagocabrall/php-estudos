@@ -45,9 +45,16 @@ echo $a;    // resultado = 10
 echo $b;    // resultado = 10
 ?>
 ```
-Existem vários tipos de variáveis que se adequam melhor em determinadas situações, exemplo: 
-1 - [Booleano](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/booleano_variavel.md)
-
+Existem vários tipos de variáveis que se adequam melhor em determinadas situações, exemplo:     
+1- [Booleano](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/booleano_variavel.md)
+2- [Numérico]()
+3- [String]()
+4- [Array]()
+5- [Objeto]()
+6- [Recuso]()
+7- [Misto]()
+9- [Callback]()
+10- [NULL]()
 
 ## Tipos de dados
 
