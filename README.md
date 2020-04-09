@@ -70,10 +70,10 @@ echo MAXIMO_CLIENTES;
 ## Operadores
 
 Os tipos de operadores são:
-1- Atribuição
-2- Aritméticos
-3- Relacionais
-4- Lógicos
+1- [Atribuição]()
+2- [Aritméticos]()
+3- [Relacionais]()
+4- [Lógicos]()
 
 
 ## Condicionais

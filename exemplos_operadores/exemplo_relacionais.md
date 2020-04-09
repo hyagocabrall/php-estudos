@@ -6,13 +6,9 @@ Operadores relacionais são utilizados para realizar comparações entre valores
 ===        Idêntico     // Resulta **True** se as expressões forem iguais e do mesmo tipo tipo de dados.   
 != ou <>   Diferente    // Resulta **True** se as expressões forem diferentes.  
 
-<          Menor.   
-
->          Maior que.   
-
-<=         Menor ou igual.  
-
->=         Maior ou igual.   
-
+" < "          Menor.   
+" > "          Maior que.    
+" <= "         Menor ou igual.  
+" >= "        Maior ou igual.   
 
 O **PHP** sempre considera o valor zero como sendo falso em comparações lógicas.
