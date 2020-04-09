@@ -25,7 +25,7 @@ Esta linguagem tem como suas pasticularidades a facilitação o desenvolvimento 
 
 ## Declaração de variável
 
-[regras_variaveis](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/regras_variaveis.md)
+[regras](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/regras_variaveis.md)
 
 ## Tipos de dados
 
