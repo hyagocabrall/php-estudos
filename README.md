@@ -67,7 +67,7 @@ echo MAXIMO_CLIENTES;
 ?>
 ```
 
-## Tipos de dados
+## Operadores
 
 ## Condicionais
 
