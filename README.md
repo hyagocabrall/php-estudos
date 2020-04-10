@@ -75,12 +75,20 @@ Os tipos de operadores são:
 3- [Relacionais](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_relacionais.md)
 4- [Lógicos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_logicos.md)
 
-
-## Condicionais
-
 ## Estruturas de controle
 
+1- [If]()
+2- [While]()
+3- [For]()
+4- [Switch]()
+5- [Foreach]()
+6- [Continue]()
+7- [Break]()
+
+
 ## Funções 
+
+## Condicionais
 
 ## Listas
 
