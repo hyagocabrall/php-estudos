@@ -76,6 +76,7 @@ Os tipos de operadores são:
 4- [Lógicos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_logicos.md)
 
 ## Estruturas de controle
+
 As estruturas de controle são:          
 1- [If](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_if.md)  
 2- [While](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_while.md)   
@@ -85,8 +86,12 @@ As estruturas de controle são:
 6- [Continue](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_break.md)    
 7- [Break](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_break.md)   
 
-## Funções 
+## Requisições de arquivos
 
+Em linaguagens de script como o **PHP**, frequentemente precisamos de auxilio externo, como inclusão de funções, constantes, configurações ou até mesmo arquivos envolvendo classes de de objetos. Algumas destas funções são:
+1- [Include <arquivo>]()            
+2- [include_once <arquivo>]()           
+3- [require_once <arquivo>]()           
 
 ## Condicionais
 

@@ -1,0 +1,3 @@
+## Require_once
+
+Funciona da emsma maneira que o comando require, a não ser que o arquivo informado já tenha sido inclupido, não refazendo a operação (o arquivo é incluido apenas uma vez). Este comando é útil em casos em que o programa pode passar mais de uma vez pela mesma instrução. Assim, poderá-se evitar sobreposições redeclarações ...

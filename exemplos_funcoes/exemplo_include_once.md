@@ -1,0 +1,3 @@
+## Include_once
+
+Funciona da mesma maneira que o comando include, a ão ser que o arquivo informado já tenha sido incluído, não refazendo a operação (o arquivo incluído apenas uma vez). Este comando é útil em casos em que o programa pode passar mais de uma vez pela mesma instrução. Assim, evitará sobreposições, redeclarações ...
