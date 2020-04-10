@@ -45,7 +45,7 @@ echo $a;    // resultado = 10
 echo $b;    // resultado = 10
 ?>
 ```
-Existem vários tipos de variáveis que se adequam melhor em determinadas situações, exemplo: 
+Existem vários tipos de variáveis que se adequam melhor em determinadas situações, exemplo:     
 1- [Booleano](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/booleano_variavel.md)  
 2- [Numérico](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/numerico_vaiavel.md)   
 3- [String](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_variaveis/string_variavel.md)  
@@ -69,14 +69,14 @@ echo MAXIMO_CLIENTES;
 
 ## Operadores
 
-Os tipos de operadores são: 
+Os tipos de operadores são:         
 1- [Atribuição](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_atribuicao.md)  
 2- [Aritméticos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_aritmeticos.md)    
 3- [Relacionais](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_relacionais.md)    
 4- [Lógicos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_operadores/exemplo_logicos.md)
 
 ## Estruturas de controle
-As estruturas de controle são 
+As estruturas de controle são:          
 1- [If](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_if.md)  
 2- [While](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_while.md)   
 3- [For](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_estruturas_controle/exemplo_for.md)   
