@@ -1,0 +1,3 @@
+# Rasmus Lerdorf
+
+**Rasmus Lerdorf** é um programador canadiano-dinamarquês. Ele é autor da primeira versão da lingaguem de programação **PHP**. Rasmus foi co-autor das versões seguintes do **PHP**, juntamente  com os israelitas fundadores (([Andi Gutmans](https://github.com/hyagocabrall/php-estudos/blob/master/criadores_php/andi_gutmans.md) e [Zeev Suraski](https://github.com/hyagocabrall/php-estudos/blob/master/criadores_php/zeev_suraski.md))).

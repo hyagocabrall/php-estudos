@@ -2,7 +2,7 @@
 
 # O que é ?
 
-O **PHP** é uma linguagem de programação que começou inicialmetne no intuito de controlar o acesso ao curriculo de Rasmus Lerdorf. Se baseava em u conjunto de scripts, que posterirmente foi crescendo e tendo influências da linguagem C, Depois de alguns anos de evolução e da ajuda de 2 estudantes (Andi Gutmans e Zeev Suraski), a linguagem se tornou uma das maiores de sua época, chegando a ser utilziada por mais de 20% de todo domínio da internet.
+O **PHP** é uma linguagem de programação que começou inicialmetne no intuito de controlar o acesso ao curriculo de Rasmus Lerdorf. Se baseava em u conjunto de scripts, que posterirmente foi crescendo e tendo influências da linguagem C, Depois de alguns anos de evolução e da ajuda de 2 estudantes (([Andi Gutmans](https://github.com/hyagocabrall/php-estudos/blob/master/criadores_php/andi_gutmans.md) e [Zeev Suraski](https://github.com/hyagocabrall/php-estudos/blob/master/criadores_php/zeev_suraski.md))), a linguagem se tornou uma das maiores de sua época, chegando a ser utilziada por mais de 20% de todo domínio da internet.
 
 # Como surgiu ?
 
@@ -21,8 +21,6 @@ Esta linguagem tem como suas pasticularidades a facilitação o desenvolvimento 
 # Instalação
 
  Caso deseje realizar a instação do php, clique na tag [ >>> Instalação <<< ](https://github.com/hyagocabrall/php-estudos/blob/master/INSTALACAO.md)
-
-# Sintaxe 
 
 ## Declaração de variável
 
@@ -58,7 +56,7 @@ Existem vários tipos de variáveis que se adequam melhor em determinadas situa�
 
 ## Contantes
 
-A constante é um identificador que ao contrário das variáveis seu valor não é mutável, ele é criado com um valor fixo que é mantido durante a execução do programa. Para que isto ocorra existem algumas delimitações, as constantes so podem conter valores escalares (boolean, inteiro, ponto flutuante e string). Para declaração de constrantes não se utilzia inicialmente o cifrão "$" mas sim a função define (). Normlamente estas são escritas todas em maíusculo.
+A constante é um identificador que ao contrário das variáveis seu valor não é mutável, ele é criado com um valor fixo que é mantido durante a execução do programa. Para que isto ocorra existem algumas delimitações, as constantes so podem conter valores escalares (boolean, inteiro, ponto flutuante e string). Para declaração de constrantes não se utiliza inicialmente o cifrão "$" mas sim a função define (). Normlamente estas são escritas todas em maíusculo.
 
 ```
 <?php
@@ -94,12 +92,80 @@ Em linguagens de script como o **PHP**, frequentemente precisamos de auxilio ext
 3- [Require](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_require.md)           
 4- [require_once](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_require_once.md)           
 
+## Funções
+Função é um pedaço de código com um objetivo espécífico, encapsulado sob uma estrutura única que recebe um conjunto de parâmetros e retorna algum dado. As funções são declaradas apenas uma vez, e podem ser utilizadas quanto for necessário.
+Para declarar uma função em **PHP**, utiliza-se o operador *function* seguido do nome que desejamos lhe atribuiir, sem espaços em branco e iniciando obrigatoriamente com uma letra. Na mesma linha adicionamos os parâmetros da função, separados por virgula, e em seguida colocamos o código da função dentro de {}. No final das funções utiliza-se o *return* para delimitar o tipo de resultado que a mesma irá retornar.
+
+```
+<?php
+function calcula_obesidade($peso, $altura)  //nome da função (parâmetros)
+{                               
+    retur $peso / ($altura*$altura);        //fórmula utilizada
+}
+echo calcula_obesidade (70, 1.85);
+?>
+```
+
+## Variáveis globais
+
+Todas as variáveis declaradas dentro do escopo de uma função são locais e podem ser utilizadas a qualquer momento por aquela função. Entretanto em alguns casos é necessário utilizar variáveis que estão fora daquele grupo de funções, sendo assim é necessário declará-las como global. uma variável global é acessada a partir de qualquer ponto da aplicação.
+
+```
+<?php
+$total = 0;
+function km2mi($quilometros)
+{
+    global $total;
+    $total += $quilometros;
+    return $quilometros * 0.6;
+}
+echo 'percorreu' . km2mi(100) . "milhas \n";
+echo 'percorreu' . km2mi(200) . "milhas \n";
+echo 'percorreu no total' . $total . "quilometros \n";
+?>
+```
+
+## Variáveis estáticas
+
+Dentro do escopo de uma função podemos armazenar variáveis de forma estática. Assim, elas mantêm o valor que lhes foi atribuido na última execução. Declaramos uma variável estática com o operador *static*.
+
+```
+<?php
+function percorre ($quilometros)
+{
+    static $total;
+    $total += $quilometros;
+    echo "percorreu mais $quilometros do total de $total \n"/
+}
+percorre(100);
+percorre(200);
+percorre(50);
+?>
+```
+
+## Recursão
+O **PHP** permite chamada de funções recursivamente. No caso a seguir criaremos uma função para calcular o fatorial de um número.
+```
+<?php
+funcition Fatorial ($numero)
+{
+    if ($numero == 1)
+        return $numero;
+    else
+        return $numero * Fatorial($numero -1);
+}
+echo Fatorial (5) . "\n";
+echo Fatorial (7) . "\n";
+?>
+```
+
+
+## Classes
+
+## Orientação a objeto
+
 ## Condicionais
 
 ## Listas
 
 ## Objetos
-
-## Classes
-
-## Orientação a objeto
