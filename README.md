@@ -107,27 +107,26 @@ echo calcula_obesidade (70, 1.85);
 ```
 Segue algumas funções expecíficas para manipulação de arquivos e diretórios:
 
-1- [Fopen]()
-2- [Feof]()
-3- [Fgets]()
-4- [Fwrite]()
-5- [Fclose]()
-6- [File_put_contents]
-7- [file_get_contents]
-9- [File]()
-10- [Copy]()
-11- [Rename]()
-12- [Unlink]()
-13- [File_exists]()
-14- [is_file]()
-15- [mkdir]()
-16- [getcwd]()
-17- [chdir]()
-18- [rmdir]()
-19- [opendir]()
-20- [closedir]()
-21- [readdir]()
-
+1- [Fopen](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_fopen.md)       
+2- [Feof](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_feof.md)     
+3- [Fgets](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_fgets.md)       
+4- [Fwrite](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_fwrite.md)     
+5- [Fclose](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_fclose.md)     
+6- [File_put_contents](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_file_put_contents.md)       
+7- [file_get_contents](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_file_get_contents.md)       
+9- [File](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_file.md)     
+10- [Copy](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_copy.md)        
+11- [Rename](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_rename.md)        
+12- [Unlink](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_unlink.md)        
+13- [File_exists](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_file_exists.md)      
+14- [is_file](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_getcwd.md)       
+15- [mkdir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_getcwd.md)     
+16- [getcwd](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_getcwd.md)        
+17- [chdir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_chdir.md)      
+18- [rmdir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_rmdir.md)      
+19- [opendir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_getcwd.md)       
+20- [closedir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_closedir.md)        
+21- [readdir](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_readdir.md)      
 
 ## Variáveis globais
 
