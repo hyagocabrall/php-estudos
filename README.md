@@ -105,6 +105,29 @@ function calcula_obesidade($peso, $altura)  //nome da função (parâmetros)
 echo calcula_obesidade (70, 1.85);
 ?>
 ```
+Segue algumas funções expecíficas para manipulação de arquivos e diretórios:
+
+1- [Fopen]()
+2- [Feof]()
+3- [Fgets]()
+4- [Fwrite]()
+5- [Fclose]()
+6- [File_put_contents]
+7- [file_get_contents]
+9- [File]()
+10- [Copy]()
+11- [Rename]()
+12- [Unlink]()
+13- [File_exists]()
+14- [is_file]()
+15- [mkdir]()
+16- [getcwd]()
+17- [chdir]()
+18- [rmdir]()
+19- [opendir]()
+20- [closedir]()
+21- [readdir]()
+
 
 ## Variáveis globais
 
