@@ -226,6 +226,56 @@ As funções aqui demonstradas são utilizadas para tratativa de strings
 7- [Str_repleace](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_str_replace.md)      
 8- [Strpos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strpos.md)     
 
+## Arrays
+Arrays são acessados mediante uma posição, como um índice numérico. Para criar um array, pode-se utilizar a função array ([chave =>]valor, ...)
+```
+$cores = array ('vermelho', 'azul', 'verde', 'amarelo');
+        ou
+$cores = array (0=>'vermelho', '1=>'azul', 2=>'verde', 3=>'amarelo');
+        ainda sim
+$cores[]='vermelho'; 
+$cores[]='joão';
+$cores[]='carlos';
+$cores[]='josé';
+```
+De qualquer forma, basta vc digitar o a posição dentro do colchetes que ele lhe mostrará a informação correspondente
+```
+echo $cores[0] = vermelho
+```
+
+### Interações do Array
+Os arrays podem ser interativos no **PHP** pelo operador *foreach*, percorrendo cada uma das posições do array.
+```
+$frutas['cor']  =   'vermelha';
+$frutas['sabor']    =   'doce';
+$futas['formato']   =   'redonda';
+$frutas['nome'] =   'maça';   
+foreach ($frutas as $chave => $fruta)
+{
+    echo "$chave => $fruta \n";
+}
+``` 
+### Funções envolvendo arrays
+As funções aqui demonstradas são utilizadas para tratativa de arrays
+1- [array_push]()
+2- [array_pop]()
+3- [array_shift]()
+4- [array_unshift]()   
+5- [array_pad]()
+6- [array_reverse]()
+7- [array_merge]()
+8- [array_keys]()
+9- [array_values]()
+10- [array_slice]()
+11- [count]()
+12- [array_in]()
+13- [sort]()
+14- [rsort]()
+15- [asort]()
+16- [ksort]()
+17- [explode]()
+18- [implode]()
+
 
 ## Classes
 
