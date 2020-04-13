@@ -279,16 +279,15 @@ As funções aqui demonstradas são utilizadas para tratativa de arrays
 ## Objetos
 
 ### Funções envolvendo objetos
-Nesta lista iremos tratar de uma série de funções envolvendo manipulação de objetos.
-
-1- [get_class_methods](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_methods.md)
-2- [get_class_vars](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_vars.md)
-3- [get_object_vars](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_object_vars.md)
-4- [get_class](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class.md)
-5- [get_parent_class](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_parent_class.md)
-6- [is_subclass_of](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_is_subclass_of.md)
-7- [method_exists](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_method_exists.md)
-8- [call_user_func](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_call_user_func.md)
+Nesta lista iremos tratar de uma série de funções envolvendo manipulação de objetos.            
+1- [get_class_methods](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_methods.md)       
+2- [get_class_vars](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_vars.md)     
+3- [get_object_vars](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_object_vars.md)       
+4- [get_class](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class.md)           
+5- [get_parent_class](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_parent_class.md)     
+6- [is_subclass_of](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_is_subclass_of.md)     
+7- [method_exists](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_method_exists.md)       
+8- [call_user_func](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_call_user_func.md)     
 
 
 ## Classes
