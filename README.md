@@ -181,6 +181,51 @@ echo Fatorial (7) . "\n";
 ?>
 ```
 
+## Strings
+
+### Declaração de strings
+ Uma string é uma cadeia de caracteres alfanuméricos. Para declarar uma string podemos utilziar apóstrofe '' ou aspas "".
+ ```
+ <?php
+ $variavel = 'maça'     
+ print "Como $fruta";       // resultado 'como maça' - quando utilizado "" o php interpreta a valiravel
+ print 'como $fruta';       // resultado 'como $fruta' - quando utilizado '' o php traz a variável
+ ?>
+ ```
+
+### Concatenação
+Para concatenar strings, pode-se utilizar o perador "." ou colocar múltiplas variáveis dentro de strings duplas "," uma vez que seu conteúdo é interpretado.
+```
+<?php
+$a = 1234;
+echo 'O salário é ' . $a . "\n";    // O salário é 1234
+echo "O salário é $a \n";  // O salário é 1234
+?>
+```
+
+### Caracteres de escape
+Dentro do **php** existem alguns comando procedidos de \ que podemos utilizar para alcançar funções específicas.
+
+Caractere       Descrição
+*\n*            // Quebra de linha
+*\r*            // Retorno de carro
+*\t*            // Tabulação
+*\"*            // Aspas duplas
+*\$*            // Símbolo de $
+
+Obs: utiliza aspas duplas para declarar strings somente quando for necessário avaliar o conteúdo, evitando, assim, tempo de processamento desnecessário.
+
+### Funções envolvendo strings
+As funções aqui demonstradas são utilizadas para tratativa de strings
+1- [Strtoupper]()
+2- [Strtolower]()
+3- [Substr]()
+4- [Strpad]()
+5- [Str_repeat]()
+6- [Strlen]()
+7- [Str_repleace]()
+8- [Strpos]()
+
 
 ## Classes
 
