@@ -216,7 +216,7 @@ Caractere       Descrição
 Obs: utiliza aspas duplas para declarar strings somente quando for necessário avaliar o conteúdo, evitando, assim, tempo de processamento desnecessário.
 
 ### Funções envolvendo strings
-As funções aqui demonstradas são utilizadas para tratativa de strings
+As funções aqui demonstradas são utilizadas para tratativa de strings       
 1- [Strtoupper](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strtoupper.md)     
 2- [Strtolower](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strtolower.md)     
 3- [Substr](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_substr.md)     
