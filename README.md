@@ -207,11 +207,17 @@ echo "O salário é $a \n";  // O salário é 1234
 Dentro do **php** existem alguns comando procedidos de \ que podemos utilizar para alcançar funções específicas.
 
 Caractere       Descrição
+
 *\n*            // Quebra de linha
+
 *\r*            // Retorno de carro
+
 *\t*            // Tabulação
+
 *\"*            // Aspas duplas
+
 *\$*            // Símbolo de $
+
 
 Obs: utiliza aspas duplas para declarar strings somente quando for necessário avaliar o conteúdo, evitando, assim, tempo de processamento desnecessário.
 
