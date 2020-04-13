@@ -276,6 +276,21 @@ As funções aqui demonstradas são utilizadas para tratativa de arrays
 17- [explode](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_explore.md)      
 18- [implode](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_implode.md)          
 
+## Objetos
+
+### Funções envolvendo objetos
+Nesta lista iremos tratar de uma série de funções envolvendo manipulação de objetos.
+
+1- [get_classe_methods]()
+2- [get_class_vars]()
+3- [get_object_vars]()
+4- [get_class]()
+5- [get_parent_class]()
+6- [is_subclass_of]()
+7- [method_exists]()
+8- [call_user_func]()
+
+
 ## Classes
 
 ## Orientação a objeto
@@ -283,5 +298,3 @@ As funções aqui demonstradas são utilizadas para tratativa de arrays
 ## Condicionais
 
 ## Listas
-
-## Objetos
