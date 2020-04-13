@@ -208,15 +208,15 @@ Dentro do **php** existem alguns comando procedidos de \ que podemos utilizar pa
 
 Caractere       Descrição
 
-*\n*            // Quebra de linha
+*\n*                      // Quebra de linha
 
-*\r*            // Retorno de carro
+*\r*                     // Retorno de carro
 
-*\t*            // Tabulação
+*\t*                    // Tabulação
 
-*\"*            // Aspas duplas
+*\"*                   // Aspas duplas
 
-*\$*            // Símbolo de $
+*\$*                  // Símbolo de $
 
 
 Obs: utiliza aspas duplas para declarar strings somente quando for necessário avaliar o conteúdo, evitando, assim, tempo de processamento desnecessário.
