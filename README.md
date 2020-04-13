@@ -217,14 +217,14 @@ Obs: utiliza aspas duplas para declarar strings somente quando for necessário a
 
 ### Funções envolvendo strings
 As funções aqui demonstradas são utilizadas para tratativa de strings
-1- [Strtoupper]()
-2- [Strtolower]()
-3- [Substr]()
-4- [Strpad]()
-5- [Str_repeat]()
-6- [Strlen]()
-7- [Str_repleace]()
-8- [Strpos]()
+1- [Strtoupper](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strtoupper.md)     
+2- [Strtolower](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strtolower.md)     
+3- [Substr](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_substr.md)     
+4- [Strpad](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strpad.md)     
+5- [Str_repeat](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_str_repeat.md)     
+6- [Strlen](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strlen.md)     
+7- [Str_repleace](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_str_replace.md)      
+8- [Strpos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_strpos.md)     
 
 
 ## Classes
