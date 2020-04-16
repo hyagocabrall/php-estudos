@@ -284,6 +284,22 @@ As funções aqui demonstradas são utilizadas para tratativa de arrays
 
 ## Objetos
 
+Um objeto é uma entidade com um determinado comportamento definido por seus métodos (ações) e propriedades (dados). Para criar um objeto deve-se utilizar o operador *new*.
+´´´
+<?php
+class Computador
+{
+    var $cpu;
+    function ligar()
+    {
+        echo "Ligando computador a {$this->cpu}...";
+    }
+}
+$obj = new Computador;
+$obj -> = "500Mhz"
+$obj -> ligar();
+?>
+´´´
 ### Funções envolvendo objetos
 Nesta lista iremos tratar de uma série de funções envolvendo manipulação de objetos.            
 1- [get_class_methods](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_methods.md)       
