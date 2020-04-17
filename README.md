@@ -302,6 +302,7 @@ $obj -> ligar();
 ?>
 ```
 
+
 ### Funções envolvendo objetos
 Nesta lista iremos tratar de uma série de funções envolvendo manipulação de objetos.            
 1- [get_class_methods](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_funcoes/exemplo_get_class_methods.md)       
@@ -315,6 +316,71 @@ Nesta lista iremos tratar de uma série de funções envolvendo manipulação de
 
 
 ## Classes
+Classe é uma estrutura que define um tipo de dados, podendo conter atributos (variáveis) e também funções (métodos) para manipular estes atributos.
+Obs: Recomenda-se iniciar nomes de classes com a letra maipuscula e, de preferência, evitar a utilização do caractere "_". Ex: class CestaDeCompras ao invéz de cesta_de_compras.
+```
+<?php
+class Produto
+{
+    var $Codigo;
+    var $Descricao;
+    var $Preco;
+    var $Quantidade;
+}
+?>
+```
+
+Os membros de uma classe são declarados na ordem: primeiro as propriedades, e em seguida, os métodos.
+```
+<?php
+class Pessoa
+{
+    var $Codigo;
+    var $Nome;
+    var $Altura;
+    var $Idade;
+    var $Nascimento;
+    var $Escolaridade;
+    var $Salario;
+
+    // Método Crescer - Aumenta a altura em $centimetros
+    function Crescer($centimetros)
+    {
+        if ($centimetros > 0)
+        {
+            $this -> Altura += $centimetros;
+        }
+    }
+
+    // Método Formar - Altera a escolaridade para $titulacao
+    function Formar($titulacao)
+    {
+        $this -> Escolaridade = $titulacao;
+    }
+
+    // Método Envelhecer - Aumenta a idade em $anos
+    function Envelhecer($anos)
+    {
+        if ($anos > 0)
+        {
+            $this -> Idade += $anos;
+        }
+    }
+}
+?>
+```
+
+## Construtores e destrutores
+Construtor é um método especial utilizado para definir o comportamento inicial de um objeto, ou seja, o comportamento no momendo de sua criação. O mesmo é executado automaticamente no momento em que instanciamos o operador *new*. Assim, não devemos retornar nenhum valor por meio do método construtor por que o mesmo retorna por definição o p´roprio objeto que está sendo instanciado.
+Obs: para definir um método *construtor* em um determinada classe basta declarar o método **__construct()**
+
+Destrutor ou finalizador é um método especiaal executado automaticamente quando o objeto é desalocado da memória, quando atribuimos o valor *NULL* ao objeto, quando utilizamos a função **unset()** sobre o mesmo, o programa é finalizado. O método destrutor pode ser utilizado para finalizar conexões, apagar arquivos temporários criados durante o ciclo de voda do objeto, dentre outras circunstâncias.
+Obs: para definir um método destrutor em uma determinada classe basta declarar o método **__destruct()**
+
+## Herança
+
+
+
 
 ## Orientação a objeto
 
