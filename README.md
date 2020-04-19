@@ -401,8 +401,12 @@ Um método final não pode ser sobrescrito na classe filha. Para marcar um méto
 
 ## Encapsulamento
 O encapsulamento é um mecanismo que provê proteção de acesso aos membros internos de um objeto. Considerando que as as classes possuem responsabilidade sobre os atributos que contem, existem certas propriedades de uma classe que devem ser tratadas exclusivamente por métodos dela mesma, que são implementações projetadas para manipular essas propriedade da forma correta. As propriedades nunca devem ser acessadas diretamente de fora do escopo de uma classe, pois dessa forma a classe não fornece garantias sobre os atributos que contém. perdendo, assim, a responsabilidade sobre eles.
-Uma das formas de atingir o encapsulamento é definir a [visibilidade das propriedades]() e dos metodos de um objeto. A visibilidade define a forma como as propriedades devem ser acessadas.
+Uma das formas de atingir o encapsulamento é definir a [visibilidade das propriedades](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_encapsulamento/visibilidade_classificacao.md) e dos metodos de um objeto. A visibilidade define a forma como as propriedades devem ser acessadas.
 
+Obs:  A visibilidade foi introduzida no **PHP 5**, sendo assim ficou definido que quando não houver visivilidade definida de uma propriedade por padrão ela será *public*.
+
+## Membros da classe
+A classe é uma estrutura-padrão para a criação de objetos. A classe permite que armazenemos valores enla de duas formas: [constantes de classe]() e [propriedades estáticas](). Estes atributos são comuns a todos os objetos da mesma classe.
 
 ## Orientação a objeto
 

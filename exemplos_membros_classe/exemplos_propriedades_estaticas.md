@@ -1,0 +1,2 @@
+## Propriedades estáticas
+
