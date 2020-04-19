@@ -406,7 +406,7 @@ Uma das formas de atingir o encapsulamento é definir a [visibilidade das propri
 Obs:  A visibilidade foi introduzida no **PHP 5**, sendo assim ficou definido que quando não houver visivilidade definida de uma propriedade por padrão ela será *public*.
 
 ## Membros da classe
-A classe é uma estrutura-padrão para a criação de objetos. A classe permite que armazenemos valores enla de duas formas: [constantes de classe]() e [propriedades estáticas](). Estes atributos são comuns a todos os objetos da mesma classe.
+A classe é uma estrutura-padrão para a criação de objetos. A classe permite que armazenemos valores enla de duas formas: [constantes de classe](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_membros_classe/exemplos_membros_classe.md) e [propriedades estáticas](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_membros_classe/exemplos_propriedades_estaticas.md). Estes atributos são comuns a todos os objetos da mesma classe.
 
 ## Orientação a objeto
 

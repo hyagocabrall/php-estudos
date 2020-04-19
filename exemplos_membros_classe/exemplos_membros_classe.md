@@ -23,6 +23,7 @@ echo Biblioteca::Nome . Aplicacao::Ambiente . Aplicacao::Versao . "\n"; // Acess
 new Aplicacao('Dia');
 new Aplicacao('Gimp');
 ?>
+
 Resultado:
 GTK Gnome Desktop 3.8
 GTK Gnome Desktop 3.8 Dia
