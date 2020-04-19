@@ -408,8 +408,32 @@ Obs:  A visibilidade foi introduzida no **PHP 5**, sendo assim ficou definido qu
 ## Membros da classe
 A classe é uma estrutura-padrão para a criação de objetos. A classe permite que armazenemos valores enla de duas formas: [constantes de classe](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_membros_classe/exemplos_membros_classe.md) e [propriedades estáticas](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_membros_classe/exemplos_propriedades_estaticas.md). Estes atributos são comuns a todos os objetos da mesma classe.
 
-## Orientação a objeto
+## Métodos estáticos
+  Métodos estáticos podem ser invocados diretamente da classe, sem a necessidade de isntanciar um objeto para isso. Eles não devem referenciar propriedades internas pelo operador $this, porque este operador é utilizado para referenciar propriedades internas da classe (objetos), mas não a própria classe. São limitados a chamarem outros métodos estáticos da classe ou tulizar apenas prrpiedades estáticas. Para executar um método estático, basta utilizar a sintaze NomeDaClasse::NomeDoMétodo(). Um método estático pode acessar ainda constantes de classe e propiedades estáticas da mesma classe (por meio do operador *self*) e da superclasse (por meio do operador *parent*).
+```
+<?php
+class Aplicacao
+{
+    static function Sobre ()    // Método estático - lê o arquivo readme.txt
+    {
+        $fd = fopen('readme.txt', 'r');
+        while ($linha = fgts($fd, 200))
+        {
+            echo $linha;
+        }
+    }
+}
+echo "Informações sobre a aplicação: \n";
+echo "=============================: \n";
+Aplicacao::Sobre();
+?>
 
-## Condicionais
+Resutlado:
+Informações sobre a aplicação:
+=============================:
+Esta aplicação está licenciada sob a GLP
+Paramaiores informações, www.fsf.org
+Contate o autor através do e-mail autor@aplicacao.com.br
+```
 
-## Listas
+## Associação
