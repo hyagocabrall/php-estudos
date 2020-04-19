@@ -394,7 +394,14 @@ Classes abstratas são classes que nunca serão instanciadas na forma de objetos
 A classe final não pode ser uma superclasse, ou seja, não pode ser em uma estrutura de herança. Se definirmos uma classe como final pelo operador *final*, ela não poderá mais ser especializada.
 
 ## Métodos abstratos
+Um método abstrato consiste na definição de uma assinatura na classe abstrata. Sendo assim obriga que antes da classe filha ser utilizada deverá ter sido preenchida primeiramente a classe pai.
 
+## Métodos finais
+Um método final não pode ser sobrescrito na classe filha. Para marcar um método como final, basta utilizar o operador *final* no início da sua declaração.
+
+## Encapsulamento
+O encapsulamento é um mecanismo que provê proteção de acesso aos membros internos de um objeto. Considerando que as as classes possuem responsabilidade sobre os atributos que contem, existem certas propriedades de uma classe que devem ser tratadas exclusivamente por métodos dela mesma, que são implementações projetadas para manipular essas propriedade da forma correta. As propriedades nunca devem ser acessadas diretamente de fora do escopo de uma classe, pois dessa forma a classe não fornece garantias sobre os atributos que contém. perdendo, assim, a responsabilidade sobre eles.
+Uma das formas de atingir o encapsulamento é definir a [visibilidade das propriedades]() e dos metodos de um objeto. A visibilidade define a forma como as propriedades devem ser acessadas.
 
 
 ## Orientação a objeto
