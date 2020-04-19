@@ -378,7 +378,22 @@ Destrutor ou finalizador é um método especiaal executado automaticamente quand
 Obs: para definir um método destrutor em uma determinada classe basta declarar o método **__destruct()**
 
 ## Herança
+A herança é o compartilhamento de atributos e comportamentos entre as classes de uma mesma hierarquia (árvore). As classes inferiores da hierarquia automaticamente herdam todas as propriedades e os métodos das classes superiores, chamadas de superclasse.
 
+## Polimorfismo
+O polimorfismo é o principio que permite que classes derivadas de uma mesma superclasse tenham métodos iguais (com a mesma nomenclatura e parâmetros), mas comportamentos diferentes, redefinidos em cada uma das classes-filhas.
+Obs: O **php** não suporta sobrecarga, ou métodos com o mesmo nome, mas assinaturas (parametrixação) diferentes.
+
+## Abstração
+Para construir um sistema orientado a objetos, não devemos projetar o sistema como sendo uma grande pela monolítica, devemos separá-lo em partes, concentrando-nos nas peças mais importantes e ignorando os detalhes (em primeiro momento), para podermos construir peças bem-definidas que possam ser reaprovetadas mais tarde, formando uma estrutura hierárquica.
+
+## Classes abstratas
+Classes abstratas são classes que nunca serão instanciadas na forma de objetos, sometne suas filhas. É interessantes marcas essas classes como sendo classes abstratas, demodo que cada classe abstrata é tratada diferentemente pela linguagem de programação, a qual irá automaticamente impedir que se instanciem objetos a partir dela.
+
+## Classes finais
+A classe final não pode ser uma superclasse, ou seja, não pode ser em uma estrutura de herança. Se definirmos uma classe como final pelo operador *final*, ela não poderá mais ser especializada.
+
+## Métodos abstratos
 
 
 
