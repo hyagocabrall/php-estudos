@@ -448,3 +448,8 @@ Na agregação, ao destruirmos o objeto "todo", as "partes" permanecem na memór
 
 ## Intercepções
 O **PHP5** introduziu o conceito de interceptação em operações realizadas por objetos por meio dos métodos [__set()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_set.md), [__get()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_get.md), [__call()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_call.md), [__toString()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_call.md) e [__toXml()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_toxml.md).
+
+## Interfaces
+As interfaces são conjunto de métodos que determinadas classes do nosso sistema deverão implementar incondicionalmente, toda classe que implementar uma interface deverá obrigatoriamente possuir os métodos pre definidos na interface, caso contrátio resultará em erro.
+Obs: uma classe pode implementar diversas interfaces separadas por virgula.
+[Exemplo Interface]()
