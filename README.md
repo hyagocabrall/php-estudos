@@ -453,7 +453,42 @@ O **PHP5** introduziu o conceito de interceptação em operações realizadas po
 As interfaces são conjunto de métodos que determinadas classes do nosso sistema deverão implementar incondicionalmente, toda classe que implementar uma interface deverá obrigatoriamente possuir os métodos pre definidos na interface, caso contrátio resultará em erro.
 Obs: uma classe pode implementar diversas interfaces separadas por virgula.
 [Exemplo Interface](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo_interface.md)
-Nas interfaces são utilziados 2 métodos [__clone()](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo__clone.md) e [autoload](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo_autoload.md).
+Nas interfaces são utiliziados 2 métodos [__clone()](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo__clone.md) e [autoload](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo_autoload.md).
+
+## Objetos dinâmicos
+O **PHP** nos oferece a opção de criarmos objetos dinamicamente, sem ter a classe previamente definida, entretanto esses objetos não recebem funções, apenas dados.
+```
+<?php
+$william -> nome = 'William Scatola';
+$william -> idade = 22;
+$william -> profissao = 'Controle de Estoque';
+
+$daline -> nome = 'Daline DallOglio';
+$daline -> idade = 21;
+$daline -> profissao = 'Almoxerifado';
+
+print_r($william);
+print_r($daline);
+?>
+
+Resultado:
+stdClass Object
+(
+    [nome] => William Scatola
+    [idade] => 22
+    [profissao] => Controle de Estoque
+)
+stdClass Object
+(
+    [nome] => Daline DallOglio
+    [idade] => 21
+    [profissao] => Almoxerifado
+)
+```
+
+## Manipulação de xml
+A função que iremos abordar se chama SimpleXML, ela está disponível a partid do **PHP5**, seu objetivo é facilitar a leitura, interpretação e alteração de arquivos xml. Sendo assim iremos demonstrar alguns exemplos de forma gradual para sua aplicação.
+Obs: a função *simplexml_load_file()* realiza a leitura de um documento xml, criando um objeto do tipo *SimpleXmlElement* a partir dessa operação. Caso o documento seja mal formatado, ou mesmo não seja um documento xml, essa função retornará FALSE.
 
 
 
