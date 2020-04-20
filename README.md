@@ -447,4 +447,4 @@ A composição parece com a agregação, sua diferença consiste em o objeto-pai
 Na agregação, ao destruirmos o objeto "todo", as "partes" permanecem na memória por terem sido criadas fora do escopo da classe "todo". Já na composição, quando o objeto "todo" é destruído, suas "partes" também são, justamente por terem sido criadas pelo objeto "todo".
 
 ## Intercepções
-O **PHP5** introduxiu o contei de interceptação em operações realizadas por objetos por meio dos métodos __set(), __get() e __call().
+O **PHP5** introduziu o conceito de interceptação em operações realizadas por objetos por meio dos métodos [__set()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_set.md), [__get()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_get.md), [__call()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_call.md), [__toString()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_call.md) e [__toXml()](https://github.com/hyagocabrall/php-estudos/blob/master/intercepcoes_metodos/exemplo_toxml.md).
