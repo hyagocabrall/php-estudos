@@ -487,7 +487,7 @@ stdClass Object
 ```
 
 ## Manipulação de xml
-A função que iremos abordar se chama SimpleXML, ela está disponível a partid do **PHP5**, seu objetivo é facilitar a leitura, interpretação e alteração de arquivos xml. Sendo assim iremos demonstrar alguns exemplos de forma gradual para sua aplicação.
+A função que iremos abordar se chama SimpleXML, ela está disponível a partid do **PHP5**, seu objetivo é facilitar a leitura, interpretação e alteração de arquivos xml. Sendo assim iremos demonstrar alguns [exemplos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_manipulacao_xml/manipulacao_xml.md) de forma gradual para sua aplicação.
 Obs: a função *simplexml_load_file()* realiza a leitura de um documento xml, criando um objeto do tipo *SimpleXmlElement* a partir dessa operação. Caso o documento seja mal formatado, ou mesmo não seja um documento xml, essa função retornará FALSE.
 
 
