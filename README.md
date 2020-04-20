@@ -453,7 +453,7 @@ O **PHP5** introduziu o conceito de interceptação em operações realizadas po
 As interfaces são conjunto de métodos que determinadas classes do nosso sistema deverão implementar incondicionalmente, toda classe que implementar uma interface deverá obrigatoriamente possuir os métodos pre definidos na interface, caso contrátio resultará em erro.
 Obs: uma classe pode implementar diversas interfaces separadas por virgula.
 [Exemplo Interface](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo_interface.md)
-Nas interfaces são utilziados 2 métodos [__clone()]() e [autoload]().
+Nas interfaces são utilziados 2 métodos [__clone()](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_interfaces/exemplo__clone.md) e [autoload]().
 
 
 
