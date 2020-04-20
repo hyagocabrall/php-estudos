@@ -437,3 +437,14 @@ Contate o autor através do e-mail autor@aplicacao.com.br
 ```
 
 ## Associação
+Associação é a relação mais comum entre dois objetos, de modo que um possui uma referência á posição da memória onde o outro se encontra, podendo visualizar seus atributos ou mesmo acionar uma das suas funcionalidades (métodos). A forma mais comim de implementar uma associação é ter um objeto como atributo de outro.
+
+## Agregação
+Agregação se deve quando um objeto agrega outro objeto, ou seja, torna um objeto externo parte de si mesmo pela utilização de um dos seus métodos. Assim, o objeto-pai poderá utilizar funcionalidades do objeto agregado. Nesta relação, um objeto poderá agregar uma ou muitas instâncias de um outro objeto. Para agregar muitas instâncias, a forma mais simples é utilziando arrays. Cria-se um array como atributo da classe, sendo que o papel deste array é armazenar inpumeras instâncias de uma outra classe.
+
+## Composição
+A composição parece com a agregação, sua diferença consiste em o objeto-pai ou "todo" é responsável pela criação e destruição de suas partes. O objeto-pai realmente "possui" a(s) instância(s) de suas partes, ja na agregação , as instâncias de "todo" e das "partes" são independentes.
+Na agregação, ao destruirmos o objeto "todo", as "partes" permanecem na memória por terem sido criadas fora do escopo da classe "todo". Já na composição, quando o objeto "todo" é destruído, suas "partes" também são, justamente por terem sido criadas pelo objeto "todo".
+
+## Intercepções
+O **PHP5** introduxiu o contei de interceptação em operações realizadas por objetos por meio dos métodos __set(), __get() e __call().
