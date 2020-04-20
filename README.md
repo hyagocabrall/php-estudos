@@ -490,5 +490,146 @@ stdClass Object
 A função que iremos abordar se chama SimpleXML, ela está disponível a partid do **PHP5**, seu objetivo é facilitar a leitura, interpretação e alteração de arquivos xml. Sendo assim iremos demonstrar alguns [exemplos](https://github.com/hyagocabrall/php-estudos/blob/master/exemplos_manipulacao_xml/manipulacao_xml.md) de forma gradual para sua aplicação.
 Obs: a função *simplexml_load_file()* realiza a leitura de um documento xml, criando um objeto do tipo *SimpleXmlElement* a partir dessa operação. Caso o documento seja mal formatado, ou mesmo não seja um documento xml, essa função retornará FALSE.
 
+## Tratamento de erros
+Existem diversas formas de tratar os erros no **php** dentre elas iremso abordar as mais comuns:
+
+### Função die ()
+A forma de manipulação de erro mais simples é abortar a execução da aplicação. Claro que não é qualquer erro que deva causar esta interrupção. Esta é a forma mais simplista de tratar erros e, portanto, não deve ser utilizada amplamente.
+```
+<?php
+function Abrir ($file = null)
+{
+    if ("$file)
+    {
+        die ('Falta o parâmetro com o nome do Arquivo')/
+    }
+    if ("file_exists($file))
+    {
+        die ('Arquivo não existe');
+    }
+    if (!$retorno = @file_get_contents($file))
+    {
+        die ('Impossivel ler o arquivo');
+    }
+    return $retorno;
+}
+
+$arquivo - Abrir ('/tmp/arquivo.dat');  //abrindo um arquivo
+echo $arquivo;
+?>
+
+Resultado:
+Arquivo não existe
+```
+Utilizar a função die() para controlar erros é ruim porque ela simplesmente aborta a execução do programa, o que, na maioria dos casos, não é o comportamento desejado, bisto que nem todos os tipo de erros são fatais para a execução da aplicação.
+
+### Retono de flags
+Outra forma de manipulação de erros é o retono de flags *TRUE* ou *FALSE*. Retornamos *TRUE* em caso de sucesso na operação e *FALSE* em caso de erros.
+```
+<?php
+function Abrir(#file = null)
+{
+    if (!file)
+    {
+        return false;
+    }
+    if (!file_exists($file))
+    {
+        return false;
+    }
+    if (!$retorno = @file_get_contents($file))
+    {
+        return false;
+    }
+    return $retorno;
+}
+
+$arquivo = Abrir ('/tmp/arquivo.dat');
+
+if (!$arquivo)
+{
+    echjo 'Falha ao abrir o arquivo';
+}else{
+    echo $arquivo;
+}
+?>
+
+Resultado:
+Falhas ao abrir o arquivo
+```
+A vantagem desse tipo de abordagem em relação ao primeiro é que a aplicação segue a sua execução sem ser abortada (a nao ser que a abortemos ao testar o retorno da função). A desvantagem é que não sabemos exatamente em qual ponto do programa a execução falhou, não tendo como exibir a mensagem de erro correta, apenas uma genérica.
+
+### Lançando erros
+Uma forma mais elegante de realizar a manipulação de erros é por meio das funções *trigger_error()*, que lança um erro, e a função *set_error_handler()*, a qual define uma função que realizará a manipulação dos erros lançados.
+
+**trigger_error()**
+
+bool trigger_error (string erro, int tipo)
+
+erro - Mensagem de erro gerada.
+tipo - Tipo de erro, veja os exemplos abaixo:
+
+*E_USER_ERROR* - Gera um erro fatal
+*E_USER_WARNING* - Gera uma warning
+*E_USER_NOTICE* - Gera uma notice
+
+**set_error_handler()**
+Define uma função a ser utilizada para manipular erros
+
+mixed set_error_handler (callback handler, int tipo)
+
+handler - Função ou método de um objeto a ser invocado
+tipo - Tipo de erro a ser manipulado. (segue a mesma orientação do *trigger_error*)
+```
+<?php
+function Abrir ($file = null)
+{
+    if (!$file)
+    {
+        trigger_error ('Falta o parâmetro com o nome do arquivo', E_USER_NOTICE);
+        return false;
+    }
+    if (!file_exists($file))
+    {
+        trigger_error('Arquivo não existe', E_USER_ERROR);
+        return false;
+    }
+    if (!$retorno = @file_get_contents($file))
+    {
+        trigger_error('Impossível ler o arquivo', E_USER_WARNING);
+        return false;
+    }
+    return $retorno;
+}
+
+function manipula_erro ($numero, $mensagem, $arquivo, $linha)   //função para manipular o erro
+{
+    $mensagem = "Arquivo $arquivo : linha $linha # no. $numero : $mensagem\n";
+
+    $log = fopen ('erros.log', 'a');    //escreve no log todo tipo de erro
+    fwrite ($log, $mensagem);
+    fclose ($log);
+
+    if ($numero == E_USER_WARNING)  // se for uma warning
+    {
+        echo $mensagem;
+    }else if ($numero == E_USER_ERROR){ // se for um fatal error
+        echo $mensagem;
+        die;
+    }
+}
+
+set_error_handler ('manipula_erro');    //define a função manipula_erro como manipuladora dos erros ocorridos
+
+$arquivo = Abrir('/tmp;arquivo.dat');
+echo $arquivo;
+?>
+
+Resultado:
+
+Arquivo erro_trigger.php : linha 11 # no. 256 : Arquivo não existente
+```
+A vantagem desse tipo de abordagem para maipulação de erros é a liberdade que temos para personalizar o tratamento de erros por meio da função *manipula_erro()* definida por *set_error_handler()* como sendo a função a ser invocada quando algum erro ocorre. Dentro desta função podemos exibir ou suprimir a exibição do erro, gravá-lo em um banco de dados ou gravar em um arquivo de log. A desvantagem deste tipo de abordagem é que concentramos todo tratamento de erro em uma única função genérica, quando muitas vezes precisamos analisar caso a caso para optar por uma determinada ação.
+
 
 
