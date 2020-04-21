@@ -631,5 +631,71 @@ Arquivo erro_trigger.php : linha 11 # no. 256 : Arquivo não existente
 ```
 A vantagem desse tipo de abordagem para maipulação de erros é a liberdade que temos para personalizar o tratamento de erros por meio da função *manipula_erro()* definida por *set_error_handler()* como sendo a função a ser invocada quando algum erro ocorre. Dentro desta função podemos exibir ou suprimir a exibição do erro, gravá-lo em um banco de dados ou gravar em um arquivo de log. A desvantagem deste tipo de abordagem é que concentramos todo tratamento de erro em uma única função genérica, quando muitas vezes precisamos analisar caso a caso para optar por uma determinada ação.
 
+## Tratamento de exceções
+Uma excessão é um objeto especial derivado da classe *Exception*, que contém alguns métodos para informar ao programador um relato do que aconteceu, a seguir, vc confere este métodos:                         
+*getMessage()* - Retirba a mensagem de erro                                 
+*getCode()* - Retorna o código de erro                                              
+*getFile()* - Retorna o arquivo no qual ocorreu o erro                                          
+*getLine()* - Retorna a linha na qual ocorreu o erro                                        
+*GetTrace()* - Retorna um array com as ações até o erro                                 
+*getTraceAsString()* - Retonra as ações em forma de string                              
 
+O tratamento de erros ocorre em dois níveis. Quando executamos um conjunto de operações que pode resultar em algum tipo de erro, monitoramos essas operações escrevendo o código dentro do bloco *try*. Dentro das operações críticas, quando ocorre algum erro, devemos fazer uso do comando *throw* para "lançar" uma exceção, istp é, para interromper a execução do bloco contido na cláusula *try*, a qual recebe esta execeção e repassa para outro bloco de comandos *cath*. Dentro do bloco de comandos *cath*, programamos o que deve ser realizado quando da ocorrência da exceção, podendo emitir uma mensagem ao usuário, interromper a execução da aplicaçãom escrever um arquivo de log no disco, dentro outros. O interessante desta abordagem é que a ação resultante do erro ocorrido fica totalmente isolada, extrena ao contexto do código gerador da exceção. Esta modularidade permite mudarmos o comporatdo de como é realizado este tratamento de erros, sem alterar o bloco código principal.
+Podemos lançar tipos customizados para cada tipo de erro, no exemplo a seguir, criaremos três tipos de erros a serem lançados *ParameterException*, *FileNotFoundException* e *FilePermissionException*. Para tanto, iremos declarar essas classes por meio do mecanismo de herança, a partir da superclasse *Exception*. Quando uma exceção do tipo *ParameterException* for lançada, não ocorrerá nada. Quando uma exceção do tipo *fileNotFoundException* for lançada, todas as informações a respeito do erro serão exibidas, a aplicação será terminada e, quando uma exceção do tipo *FilePermissionException* for lançada, somente a mensagem de erro será exibida.
+```
+<?php
+function Abrir($file = null)
+{
+    if (!file)
+    {
+        throw new ParameterException('Falta o parâmetro com o nome do arquivo');
+    }
+    if (!file_exists($file))
+    {
+        throw new FileNotFoundException ('Arquivo não existente');
+    }
+    if (!#retorno = @file_get_contents($file))
+    {
+        throw new FilePermissionException('Impossivel ler o arquivo');
+    }
+    return $retorno;
+}
+
+class ParameterException extends Exception{}    //definição das subclasses de erro
+class FileNotFoundException extends Exception{} //definição das subclasses de erro
+class FilePermissionException extends Exception{}   //definição das subclasses de erro
+
+try
+{
+    $arquivo = Abrir('/tmp/arquivo.dat');   //tratamento de exceções
+    echo $arquivo;
+}
+cath (ParameterException $excecao)  //captura o erro
+{
+    //não faz nada...
+}
+cath (FileNotFoundException $excecao)
+{
+    var_dump($excecao -> getTrace());
+    echo "finalizando aplicação... \n";
+    die;
+}
+catch (FilePermissionException $excecao)
+{
+    echo $excecao -> getFile() . ':' . $excecao -> getLine() . '#' . $excecao -> getMessage();
+}
+?>
+
+Resutlado:
+array(1) {
+    [0] =>
+    array (4) {
+        ["file"] => string (70) "/home/pablo/book/exemplos/erro_subexception.php"
+        ["line"] => int(28)
+        ["function"] => string(5) "Abrir"
+        ["Args"] => array(1){
+            [0] => string (16) "/tmp/arquivo.dat"  }
+    }
+}
+```
 
